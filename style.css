@@ -152,7 +152,7 @@ table {
 .header {
     width: 100vw;
     display: grid;
-    height: 12vh;
+    height: 15vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.25fr 1fr;
     grid-template-areas: "mark mark mark" "nav nav nav";
@@ -208,7 +208,7 @@ table {
 }
 
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
 
 
 
