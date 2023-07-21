@@ -1,0 +1,267 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+@font-face {
+    font-family: "Lexend-Semibold";
+    src: url(font/Lexend-SemiBold.ttf);
+}
+
+/*----MARQUESINA SECTION----*/
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----HEADER SECTION----*/
+.header {
+    width: 100vw;
+    display: grid;
+    height: 12vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    grid-template-areas: "mark mark mark" "nav nav nav";
+    background: #AED9E0;
+}
+
+.marquesina {
+    grid-area: mark;
+    background-color: #000000;
+    color: #AED9E0;
+    font-family: "Lexend-Semibold";
+    text-align: center;
+}
+
+
+.marquesina p {
+    margin: auto;
+    font-size: 0.9em;
+}
+
+.marquesina p::first-letter {
+    text-transform: uppercase;
+}
+
+.navbar {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img[src="img/logo.png"] {
+    width: 86px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.menu a {
+    padding: 10px;
+    color: #0f4745;
+    text-decoration: none;
+    font-family: "Lexend-Semibold";
+}
+
+.menu a:hover {
+    text-decoration: #0f4745 solid underline;
+}
+
+
+@media screen and (max-width: 414px) {
+
+
+
+    .header {
+        grid-template-rows: 0.25fr 1fr;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0;
+        column-gap: 0;
+        border-bottom: 0.1rem solid black;
+    }
+    
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0;
+    }
+    
+    
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .link {
+        width: 100%;
+        height: 40px;
+        display: inline-block;
+        border-top: 0.1rem solid black;
+    }
+
+    .link:hover {
+        background-color: #6d9ea5;
+        text-decoration: none;
+    }
+
+    .link:visited {
+        text-decoration: none;
+    }
+
+    .logo img[src="img/logo.png"] {
+        width: 128px;
+    }
+
+
+
+    
+
+}
